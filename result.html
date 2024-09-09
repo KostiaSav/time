@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>DTForma.com</title>
+	</head>
+	<body>
+		<header class="header header-secondary">
+			<div class="container-full">
+				<a href="/">
+					<img src="assets/img/logo.png" alt="logotype" />
+				</a>
+				<div class="hero-input__wrapper">
+					<div class="prompt__wrapper">
+						<img
+							src="assets/img/prompt.png"
+							class="prompt hero-prompt"
+							alt="prompt"
+							width="16px"
+							height="16px"
+							id="hero-prompt"
+						/>
+					</div>
+					<input class="hero-input" placeholder="Time" />
+					<button class="btn btn-standart btn-hero">Convert</button>
+				</div>
+
+				<div class="logo__wrapper">
+					<div>
+						<img src="assets/img/lang-icon.png" alt="lang" class="lang-icon" />
+						<select name="language" class="lang-select">
+							<option value="ru" selected>Russian</option>
+							<option value="ge">German</option>
+							<option value="it">Italian</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="result">
+				<div class="container-full">
+					<h3 class="result-subtitle">Date/Time format details</h3>
+					<h2 class="result-title">Aug 31, 2022 10:17:23</h2>
+					<section class="time-section">
+						<div class="time-section__list">
+							<div class="time-section_item">
+								<h4 class="time-section-title">2022</h4>
+								<p class="time-section-subtitle">Year</p>
+							</div>
+							<div class="time-section_item">
+								<h4 class="time-section-title">08</h4>
+								<p class="time-section-subtitle">Month</p>
+							</div>
+							<div class="time-section_item">
+								<h4 class="time-section-title">31</h4>
+								<p class="time-section-subtitle">Day</p>
+							</div>
+							<div class="time-section_item">
+								<h4 class="time-section-title">10</h4>
+								<p class="time-section-subtitle">Hour (24)</p>
+							</div>
+							<div class="time-section_item">
+								<h4 class="time-section-title">17</h4>
+								<p class="time-section-subtitle">Minutes</p>
+							</div>
+							<div class="time-section_item">
+								<h4 class="time-section-title">45</h4>
+								<p class="time-section-subtitle">Seconds</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="result_info">
+						<div class="result_info__switcher">
+							<div class="result-switcher_item active" data-id="1">
+								<h4>Format</h4>
+							</div>
+
+							<div class="result-switcher_item" data-id="2">
+								<h4>Day of week</h4>
+							</div>
+
+							<div class="result-switcher_item" data-id="3">
+								<h4>How long ago was</h4>
+							</div>
+
+							<div class="result-switcher_item" data-id="4">
+								<h4>AI about</h4>
+							</div>
+
+							<div class="result-switcher_item" data-id="5">
+								<h4>Pagination</h4>
+							</div>
+						</div>
+
+						<div class="result_info__content"></div>
+					</section>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container-full">
+				<div class="footer__cell footer_cell__main">
+					<a href="/">
+						<img src="assets/img/logo.png" alt="logotype" />
+					</a>
+
+					<p>© DTFormat 2024</p>
+				</div>
+				<div class="footer__cell">
+					<h4>Company</h4>
+					<ul class="footer__list-pages">
+						<li><a href="/">About us</a></li>
+						<li><a href="/">Contact us</a></li>
+						<li><a href="/">Site map</a></li>
+					</ul>
+				</div>
+				<div class="footer__cell">
+					<h4>Legal</h4>
+					<ul class="footer__list-pages">
+						<li><a href="/">Link policy</a></li>
+						<li><a href="/">Link policy</a></li>
+						<li><a href="/">Link policy</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__cell">
+					<h4>Follow us</h4>
+					<ul class="contacts">
+						<li>
+							<a href="/">
+								<div class="contacts-icon contacts-icon-facebook">
+									<img src="assets/img/facebook.png" alt="facebook" />
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="/">
+								<div class="contacts-icon contacts-icon-linkedin">
+									<img src="assets/img/linkedin.png" alt="facebook" />
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a href="/">
+								<div class="contacts-icon contacts-icon-x">
+									<img src="assets/img/twitter_x.png" alt="facebook" />
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://unpkg.com/tippy.js@6"></script>
+		<script src="assets/js/tippy.js"></script>
+		<script src="assets/js/index.js"></script>
+	</body>
+</html>
