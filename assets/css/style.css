@@ -261,7 +261,7 @@ body {
 }
 
 .text_block ul {
-	list-style-image: url('../img/time.png');
+	list-style-image: url('../img/time.svg');
 	margin-left: 25px;
 	margin-bottom: 40px;
 }
@@ -752,6 +752,51 @@ body {
 
 .hr-time-section {
 	display: none;
+}
+
+.faq-content {
+	display: none;
+	margin-top: 10px;
+	background-color: white;
+	color: black;
+}
+
+.result_info__switcher_faq {
+	padding: 0;
+	margin-top: 50px;
+}
+
+.result-switcher_item.active .faq-content {
+	display: block;
+}
+
+.result-switcher_item_faq {
+	padding: 0;
+}
+
+.result-switcher_title {
+	position: relative;
+	padding: 10px;
+}
+
+.result-switcher_item h4 {
+	cursor: pointer;
+}
+
+.result-switcher_item.active .result-switcher_title::after {
+	content: url('../img/arrow_top_light.svg');
+	width: 5px;
+	color: white;
+}
+
+.result-switcher_title::after {
+	content: url('../img/arrow_bottom.svg');
+	width: 5px;
+	height: 11px;
+	position: absolute;
+	top: 40%;
+	right: 25px;
+	transform: translateY(-50%);
 }
 
 @media screen and (max-width: 1042px) {
