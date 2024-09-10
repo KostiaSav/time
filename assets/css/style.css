@@ -9,6 +9,10 @@ a {
 	text-decoration: none;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Roboto Slab', sans-serif;
 }
@@ -430,6 +434,8 @@ body {
 }
 
 .result_info__switcher {
+	position: sticky;
+	top: 30%;
 	border: 1px solid rgb(232, 232, 232);
 	width: 20%;
 	margin-left: 0;
@@ -556,4 +562,8 @@ body {
 
 .arrow-btn:hover {
 	background-color: #e0e0e0;
+}
+
+.block_result {
+	margin-top: 120px;
 }
