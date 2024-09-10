@@ -463,13 +463,20 @@ body {
 .result-switcher_item {
 	padding: 16px 20px;
 	border-top: 1px solid rgb(232, 232, 232);
+	border-left: 1px solid rgb(232, 232, 232);
+	border-right: 1px solid rgb(232, 232, 232);
 	cursor: pointer;
 	transition: 0.4s;
+}
+
+.result-switcher_item:last-child {
+	border-bottom: 1px solid rgb(232, 232, 232);
 }
 
 .result-switcher_item.active {
 	color: #fff;
 	background-color: rgb(86, 180, 107);
+	border: 0;
 }
 
 .result-switcher_item h4 {
@@ -915,6 +922,18 @@ body {
 	.text_block table,
 	.table-standard {
 		margin-bottom: 40px;
+	}
+
+	.result_info__content {
+		padding: 30px 0px;
+	}
+
+	.faq-content .result_info__content {
+		border: 0;
+	}
+
+	.result_info__switcher.result_info__switcher_faq {
+		border: 0;
 	}
 }
 

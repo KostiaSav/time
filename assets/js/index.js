@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		return window.innerWidth <= 768;
 	}
 
-	if (isMobile) {
+	if (!isMobile()) {
 		const content = `
         
         <section class="result_info">
