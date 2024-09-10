@@ -18,18 +18,22 @@
 			<div class="container-xl">
 				<div class="logo__wrapper">
 					<div>
-						<img src="assets/img/lang-icon.png" alt="lang" class="lang-icon" />
-						<select name="language" class="lang-select">
-							<option value="ru" selected>Russian</option>
-							<option value="ge">German</option>
-							<option value="it">Italian</option>
-						</select>
+						<img src="assets/img/lang-icon.svg" alt="lang" class="lang-icon" />
+						<div class="custom-select">
+							<div class="select-selected">English</div>
+							<div class="select-items select-hide">
+								<div>English</div>
+								<div>Russian</div>
+								<div>German</div>
+								<div>Italian</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="hero">
 					<a href="/">
-						<img src="assets/img/logo.png" alt="logotype" />
+						<img src="assets/img/logo.svg" alt="logotype" />
 					</a>
 					<div class="hero-input__wrapper">
 						<div class="prompt__wrapper">
@@ -43,7 +47,20 @@
 							/>
 						</div>
 						<input class="hero-input" placeholder="Time" />
-						<a href="result.html">
+						<div class="hero-items hero-hide">
+							<div class="hero-input-item">dddd, MMMM D, YYYY, h:mm:ss a</div>
+							<div class="hero-input-item">
+								Sundey, December 1, 2024, 7:30:09 pm
+							</div>
+							<div class="hero-input-item">MMMM D, YYYY</div>
+							<div class="hero-input-item">December 1, 2024</div>
+
+							<div class="hero-input-item">MMMM Do YYYY</div>
+							<div class="hero-input-item">December 1st 2024</div>
+							<div class="hero-input-item">Do MMMM YYYY</div>
+							<div class="hero-input-item">1st December 2024</div>
+						</div>
+						<a href="result.html" class="btn-hero__wrapper">
 							<button class="btn btn-standart btn-hero">Convert</button>
 						</a>
 					</div>
@@ -169,7 +186,7 @@
 						<img src="assets/img/logo.png" alt="logotype" />
 					</a>
 
-					<p>© DTFormat 2024</p>
+					<p class="p-copyrating">© DTFormat 2024</p>
 				</div>
 				<div class="footer__cell">
 					<h4>Company</h4>
@@ -188,7 +205,7 @@
 					</ul>
 				</div>
 
-				<div class="footer__cell">
+				<div class="footer__cell footer_cell__contacts">
 					<h4>Follow us</h4>
 					<ul class="contacts">
 						<li>
@@ -216,11 +233,14 @@
 						</li>
 					</ul>
 				</div>
+
+				<p class="p-copyrating-mobile">© DTFormat 2024</p>
 			</div>
 		</footer>
 
 		<script src="https://unpkg.com/@popperjs/core@2"></script>
 		<script src="https://unpkg.com/tippy.js@6"></script>
+		<script src="assets/js/select.js"></script>
 		<script src="assets/js/tippy.js"></script>
 	</body>
 </html>

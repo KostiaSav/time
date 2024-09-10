@@ -16,32 +16,49 @@
 	<body>
 		<header class="header header-secondary">
 			<div class="container-full">
-				<a href="/">
-					<img src="assets/img/logo.png" alt="logotype" />
+				<a href="/" class='logo'>
+					<img src="assets/img/logo.svg" alt="logotype" />
 				</a>
-				<div class="hero-input__wrapper">
-					<div class="prompt__wrapper">
-						<img
-							src="assets/img/prompt.png"
-							class="prompt hero-prompt"
-							alt="prompt"
-							width="16px"
-							height="16px"
-							id="hero-prompt"
-						/>
-					</div>
-					<input class="hero-input" placeholder="Time" />
-					<button class="btn btn-standart btn-hero">Convert</button>
-				</div>
+                <span class='hero-span__wrapper'>
+                    <div class="hero-input__wrapper">
+                        <div class="prompt__wrapper">
+                            <img
+                                src="assets/img/prompt.png"
+                                class="prompt hero-prompt"
+                                alt="prompt"
+                                width="16px"
+                                height="16px"
+                                id="hero-prompt"
+                            />
+                        </div>
+                        <input class="hero-input" placeholder="Time" />
+                        <div class="hero-items hero-hide">
+                            <div class='hero-input-item'>dddd, MMMM D, YYYY, h:mm:ss a</div>
+                            <div class='hero-input-item'>Sundey, December 1, 2024, 7:30:09 pm</div>
+                            <div class='hero-input-item'>MMMM D, YYYY</div>
+                            <div class='hero-input-item'>December 1, 2024</div>
+    
+                            <div class='hero-input-item'>MMMM Do YYYY</div>
+                            <div class='hero-input-item'>December 1st 2024</div>
+                            <div class='hero-input-item'>Do MMMM YYYY</div>
+                            <div class='hero-input-item'>1st December 2024</div>
+                        </div>
+                        <button class="btn btn-standart btn-hero">Convert</button>
+                    </div>
+                </span>
 
 				<div class="logo__wrapper">
 					<div>
-						<img src="assets/img/lang-icon.png" alt="lang" class="lang-icon" />
-						<select name="language" class="lang-select">
-							<option value="ru" selected>Russian</option>
-							<option value="ge">German</option>
-							<option value="it">Italian</option>
-						</select>
+						<img src="assets/img/lang-icon.svg" alt="lang" class="lang-icon" />
+						<div class="custom-select">
+							<div class="select-selected">English</div>
+							<div class="select-items select-hide">
+								<div>English</div>
+								<div>Russian</div>
+								<div>German</div>
+								<div>Italian</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -62,6 +79,7 @@
 								<h4 class="time-section-title">08</h4>
 								<p class="time-section-subtitle">Month</p>
 							</div>
+                            <hr class='hr-time-section'>
 							<div class="time-section_item">
 								<h4 class="time-section-title">31</h4>
 								<p class="time-section-subtitle">Day</p>
@@ -70,6 +88,7 @@
 								<h4 class="time-section-title">10</h4>
 								<p class="time-section-subtitle">Hour (24)</p>
 							</div>
+                            <hr class='hr-time-section'>
 							<div class="time-section_item">
 								<h4 class="time-section-title">17</h4>
 								<p class="time-section-subtitle">Minutes</p>
@@ -114,288 +133,301 @@
 							</a>
 						</div>
 
-						<div class="result_info__content">
-							<h3 class="result_info__content-title" id="format">Format</h3>
-							<table class="table-standard">
-								<tr>
-									<td>
-										Time Stomp
-										<img
-											src="assets/img/prompt.png"
-											class="prompt hero-prompt"
-											alt="prompt"
-											width="12px"
-											height="12px"
-											id="time-stomp-prompt"
-										/>
-									</td>
+                        <div class="result_info__content_wrapper">
 
-									<td>17936785</td>
-								</tr>
-								<tr>
-									<td>
-										ISO 8601
-										<img
-											src="assets/img/prompt.png"
-											class="prompt hero-prompt"
-											alt="prompt"
-											width="12px"
-											height="12px"
-											id="time-stomp-prompt"
-										/>
-									</td>
-									<td>2024-12-31 T 23:59:59</td>
-								</tr>
-								<tr>
-									<td>
-										Time Stomp
-										<img
-											src="assets/img/prompt.png"
-											class="prompt hero-prompt"
-											alt="prompt"
-											width="12px"
-											height="12px"
-											id="time-stomp-prompt"
-										/>
-									</td>
-									<td>17936785</td>
-								</tr>
-								<tr>
-									<td>
-										ISO 8601
-										<img
-											src="assets/img/prompt.png"
-											class="prompt hero-prompt"
-											alt="prompt"
-											width="12px"
-											height="12px"
-											id="time-stomp-prompt"
-										/>
-									</td>
-									<td>2024-12-31 T 23:59:59</td>
-								</tr>
-							</table>
+                            <div class="result_info__content">
+                                <h3 class="result_info__content-title" id="format">Format</h3>
+                                <table class="table-standard">
+                                    <tr>
+                                        <td>
+                                            Time Stomp
+                                            <img
+                                                src="assets/img/prompt.png"
+                                                class="prompt hero-prompt"
+                                                alt="prompt"
+                                                width="12px"
+                                                height="12px"
+                                                id="time-stomp-prompt"
+                                            />
+                                        </td>
+    
+                                        <td>17936785</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            ISO 8601
+                                            <img
+                                                src="assets/img/prompt.png"
+                                                class="prompt hero-prompt"
+                                                alt="prompt"
+                                                width="12px"
+                                                height="12px"
+                                                id="time-stomp-prompt"
+                                            />
+                                        </td>
+                                        <td>2024-12-31 T 23:59:59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Time Stomp
+                                            <img
+                                                src="assets/img/prompt.png"
+                                                class="prompt hero-prompt"
+                                                alt="prompt"
+                                                width="12px"
+                                                height="12px"
+                                                id="time-stomp-prompt"
+                                            />
+                                        </td>
+                                        <td>17936785</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            ISO 8601
+                                            <img
+                                                src="assets/img/prompt.png"
+                                                class="prompt hero-prompt"
+                                                alt="prompt"
+                                                width="12px"
+                                                height="12px"
+                                                id="time-stomp-prompt"
+                                            />
+                                        </td>
+                                        <td>2024-12-31 T 23:59:59</td>
+                                    </tr>
+                                </table>
+                            </div>
 
-							<div class="block_result">
-								<h3 class="result_info__content-title" id="dayOfWeek">
-									What day of week? 31/08/2022
-								</h3>
-								<p class="result_info__content-day-for">
-									31/08/2022 August 31, 2022 was <strong>Monday</strong>, first
-									day of week
-								</p>
-							</div>
+    <div class="result_info__content">
+        <div class="block_result">
+            <h3 class="result_info__content-title" id="dayOfWeek">
+                What day of week? 31/08/2022
+            </h3>
+            <p class="result_info__content-day-for">
+                31/08/2022 August 31, 2022 was <strong>Monday</strong>, first
+                day of week
+            </p>
+        </div>
+    </div>
 
-							<div class="block_result">
-								<h3 class="result_info__content-title" id="howLong">
-									How long ago was 08/31/2022 10:17:23
-								</h3>
-								<h4 class="result_info__content-subtitle">
-									Current time in Poltava: Friday, September 6, 2024, 16:01:31
-								</h4>
-								<table class="table-standard">
-									<tr>
-										<td>Years</td>
-										<td>4</td>
-									</tr>
-									<tr>
-										<td>Months</td>
-										<td>48</td>
-									</tr>
-									<tr>
-										<td>Week</td>
-										<td>208</td>
-									</tr>
-									<tr>
-										<td>Days</td>
-										<td>1461</td>
-									</tr>
-									<tr>
-										<td>Hours</td>
-										<td>35064</td>
-									</tr>
-									<tr>
-										<td>Minutes</td>
-										<td>2103840</td>
-									</tr>
-									<tr>
-										<td>Seconds</td>
-										<td>126230400</td>
-									</tr>
-								</table>
-							</div>
-
-							<div class="block_result">
-								<h3 class="result_info__content-title" id="aiAbout">
-									How long ago was 08/31/2022 10:17:23
-								</h3>
-								<h4 class="result_info__content-subtitle">
-									<img
-										src="assets/img/prompt.png"
-										class="prompt hero-prompt"
-										alt="prompt"
-										width="12px"
-										height="12px"
-										id="ai-about-prompt"
-									/>
-									This block was generated automatically on 06.09.2024 at 10:43,
-									updated on 11.7.24 10:43:17
-								</h4>
-
-								<p class="result_info__text">
-									Time formatting allows you to convert time data into a variety
-									of formats that are easy to read and process. This can include
-									displaying hours, minutes, seconds, AM/PM, as well as working
-									with time zones and timestamps. Proper time formatting is
-									especially important when working with an international
-									audience, as time formats vary between countries and can cause
-									confusion.
-								</p>
-								<p class="result_info__text">
-									Time formatting allows you to convert time data into a variety
-									of formats that are easy to read and process. This can include
-									displaying hours, minutes, seconds, AM/PM, as well as working
-									with time zones and timestamps. Proper time formatting is
-									especially important when working with an international
-									audience, as time formats vary between countries and can cause
-									confusion.
-								</p>
-							</div>
-
-							<div class="block_result">
-								<h3 class="result_info__content-title" id="pagination">
-									Pagination navigate
-								</h3>
-
-								<div class="date-time-picker">
-									<div class="picker-item">
-										<button class="arrow-btn left">
-											<img
-												src="assets/img/arrow_left.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-										<div class="picker-value">
-											<span class="number">2022</span>
-											<span class="label">Year</span>
-										</div>
-										<button class="arrow-btn right">
-											<img
-												src="assets/img/arrow_right.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-									</div>
-
-									<div class="picker-item">
-										<button class="arrow-btn left">
-											<img
-												src="assets/img/arrow_left.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-										<div class="picker-value">
-											<span class="number">08</span>
-											<span class="label">Month</span>
-										</div>
-										<button class="arrow-btn right">
-											<img
-												src="assets/img/arrow_right.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-									</div>
-
-									<div class="picker-item">
-										<button class="arrow-btn left">
-											<img
-												src="assets/img/arrow_left.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-										<div class="picker-value">
-											<span class="number">31</span>
-											<span class="label">Day</span>
-										</div>
-										<button class="arrow-btn right">
-											<img
-												src="assets/img/arrow_right.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-									</div>
-
-									<div class="picker-item">
-										<button class="arrow-btn left">
-											<img
-												src="assets/img/arrow_left.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-										<div class="picker-value">
-											<span class="number">10</span>
-											<span class="label">Hour (24)</span>
-										</div>
-										<button class="arrow-btn right">
-											<img
-												src="assets/img/arrow_right.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-									</div>
-
-									<div class="picker-item">
-										<button class="arrow-btn left">
-											<img
-												src="assets/img/arrow_left.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-										<div class="picker-value">
-											<span class="number">17</span>
-											<span class="label">Minutes</span>
-										</div>
-										<button class="arrow-btn right">
-											<img
-												src="assets/img/arrow_right.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-									</div>
-
-									<div class="picker-item">
-										<button class="arrow-btn left">
-											<img
-												src="assets/img/arrow_left.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-										<div class="picker-value">
-											<span class="number">45</span>
-											<span class="label">Seconds</span>
-										</div>
-										<button class="arrow-btn right">
-											<img
-												src="assets/img/arrow_right.png"
-												width="9px"
-												height="18px"
-											/>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
+    <div class="result_info__content">
+        <div class="block_result">
+            <h3 class="result_info__content-title" id="howLong">
+                How long ago was 08/31/2022 10:17:23
+            </h3>
+            <h4 class="result_info__content-subtitle">
+                Current time in Poltava: Friday, September 6, 2024, 16:01:31
+            </h4>
+            <table class="table-standard">
+                <tr>
+                    <td>Years</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Months</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td>Week</td>
+                    <td>208</td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>1461</td>
+                </tr>
+                <tr>
+                    <td>Hours</td>
+                    <td>35064</td>
+                </tr>
+                <tr>
+                    <td>Minutes</td>
+                    <td>2103840</td>
+                </tr>
+                <tr>
+                    <td>Seconds</td>
+                    <td>126230400</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="result_info__content">
+        <div class="block_result">
+            <h3 class="result_info__content-title" id="aiAbout">
+                How long ago was 08/31/2022 10:17:23
+            </h3>
+            <h4 class="result_info__content-subtitle">
+                <img
+                    src="assets/img/prompt.png"
+                    class="prompt hero-prompt"
+                    alt="prompt"
+                    width="12px"
+                    height="12px"
+                    id="ai-about-prompt"
+                />
+                This block was generated automatically on 06.09.2024 at 10:43,
+                updated on 11.7.24 10:43:17
+            </h4>
+    
+            <p class="result_info__text">
+                Time formatting allows you to convert time data into a variety
+                of formats that are easy to read and process. This can include
+                displaying hours, minutes, seconds, AM/PM, as well as working
+                with time zones and timestamps. Proper time formatting is
+                especially important when working with an international
+                audience, as time formats vary between countries and can cause
+                confusion.
+            </p>
+            <p class="result_info__text">
+                Time formatting allows you to convert time data into a variety
+                of formats that are easy to read and process. This can include
+                displaying hours, minutes, seconds, AM/PM, as well as working
+                with time zones and timestamps. Proper time formatting is
+                especially important when working with an international
+                audience, as time formats vary between countries and can cause
+                confusion.
+            </p>
+        </div>
+    </div>
+    
+    <div class="result_info__content">
+        <div class="block_result">
+            <h3 class="result_info__content-title" id="pagination">
+                Pagination navigate
+            </h3>
+    
+            <div class="date-time-picker">
+                <div class="picker-item">
+                    <button class="arrow-btn left">
+                        <img
+                            src="assets/img/arrow_left.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                    <div class="picker-value">
+                        <span class="number">2022</span>
+                        <span class="label">Year</span>
+                    </div>
+                    <button class="arrow-btn right">
+                        <img
+                            src="assets/img/arrow_right.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                </div>
+    
+                <div class="picker-item">
+                    <button class="arrow-btn left">
+                        <img
+                            src="assets/img/arrow_left.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                    <div class="picker-value">
+                        <span class="number">08</span>
+                        <span class="label">Month</span>
+                    </div>
+                    <button class="arrow-btn right">
+                        <img
+                            src="assets/img/arrow_right.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                </div>
+    
+                <div class="picker-item">
+                    <button class="arrow-btn left">
+                        <img
+                            src="assets/img/arrow_left.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                    <div class="picker-value">
+                        <span class="number">31</span>
+                        <span class="label">Day</span>
+                    </div>
+                    <button class="arrow-btn right">
+                        <img
+                            src="assets/img/arrow_right.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                </div>
+    
+                <div class="picker-item">
+                    <button class="arrow-btn left">
+                        <img
+                            src="assets/img/arrow_left.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                    <div class="picker-value">
+                        <span class="number">10</span>
+                        <span class="label">Hour (24)</span>
+                    </div>
+                    <button class="arrow-btn right">
+                        <img
+                            src="assets/img/arrow_right.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                </div>
+    
+                <div class="picker-item">
+                    <button class="arrow-btn left">
+                        <img
+                            src="assets/img/arrow_left.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                    <div class="picker-value">
+                        <span class="number">17</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <button class="arrow-btn right">
+                        <img
+                            src="assets/img/arrow_right.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                </div>
+    
+                <div class="picker-item">
+                    <button class="arrow-btn left">
+                        <img
+                            src="assets/img/arrow_left.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                    <div class="picker-value">
+                        <span class="number">45</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                    <button class="arrow-btn right">
+                        <img
+                            src="assets/img/arrow_right.png"
+                            width="9px"
+                            height="18px"
+                        />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+                            </div>
+                        </div>
 					</section>
 				</div>
 			</section>
@@ -408,7 +440,7 @@
 						<img src="assets/img/logo.png" alt="logotype" />
 					</a>
 
-					<p>© DTFormat 2024</p>
+					<p class='p-copyrating'>© DTFormat 2024</p>
 				</div>
 				<div class="footer__cell">
 					<h4>Company</h4>
@@ -427,7 +459,7 @@
 					</ul>
 				</div>
 
-				<div class="footer__cell">
+				<div class="footer__cell footer_cell__contacts">
 					<h4>Follow us</h4>
 					<ul class="contacts">
 						<li>
@@ -455,12 +487,14 @@
 						</li>
 					</ul>
 				</div>
+                <p class="p-copyrating-mobile">© DTFormat 2024</p>
 			</div>
 		</footer>
 
 		<script src="https://unpkg.com/@popperjs/core@2"></script>
 		<script src="https://unpkg.com/tippy.js@6"></script>
-		<script src="assets/js/index.js"></script>
+		<script src="assets/js/select.js"></script>
 		<script src="assets/js/tippy.js"></script>
+		<script src="assets/js/index.js"></script>
 	</body>
 </html>
